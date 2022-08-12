@@ -1,8 +1,15 @@
 // import functions and grab DOM elements
-import { getCharacters } from "./fetch-utils";
+import { getCharacters } from './fetch-utils.js';
 const characterListContainer = document.getElementById('character-list-container');
+
+async function loadData() {
+    const characters = await getCharacters();
+
+}
+
+loadData();
 // let state
-c
+
 // set event listeners 
   // get user input
   // use user input to update state 
